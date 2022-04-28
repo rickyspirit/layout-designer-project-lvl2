@@ -1,0 +1,36 @@
+
+body {
+    margin: 0;
+    background-color: $background;
+}
+
+.container {
+    @media (min-width: 1240px) {
+    max-width: 1200px;
+    }
+
+    @media (max-width: 500px) {
+    width: 100%;
+    padding: 0 20px;
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+#page-description {
+  input[type="text"] {
+  padding: 16px;
+  padding-left: 20px;
+
+  background: none;
+  font-size: 14px;
+  line-height: 16.41px;
+  font-family: 'Roboto-Regular', sans-serif;
+  color: #FFFFFF;
+  border: none;
+  }
+}

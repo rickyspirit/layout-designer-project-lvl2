@@ -1,0 +1,17 @@
+@mixin desktop-version {
+    width: initial;
+}
+  
+@mixin mobile-version {
+    width: 100%;
+}
+  
+.adaptive {
+    @media (min-width: 414px) {
+      @include desktop-version;
+    }
+  
+    @media (max-width: 414px) {
+      @include mobile-version;
+    }
+  }

@@ -1,0 +1,58 @@
+#page-description {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 200px 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+.background-img {
+  background-image: url('../images/banner.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.access-field {
+    min-width: 270px;
+    min-height: 50px;
+    padding-left: 20px;
+    margin-top: 17px;
+    margin-bottom: 1.5rem;
+
+    border: 2px solid $main-grey;
+    border-radius: 3px;
+}
+
+#access-button {
+    padding: 20px 30px;
+    min-width: 570px;
+
+
+    border-radius: 5px;
+    background-color: $button-green;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'Roboto-Bold', sans-serif;
+}
+
+h2 {
+  font-size: 38px;
+  line-height: 57px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'Roboto-Bold', sans-serif;
+}
+

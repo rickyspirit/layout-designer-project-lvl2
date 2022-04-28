@@ -1,0 +1,47 @@
+header {
+  position: absolute;
+  top: 25px;
+  font-family: Roboto, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+
+  .logo {
+    margin-left: 119px;
+    margin-right: 66px;
+
+    .menu-text {
+      color: $main-grey;
+    }
+
+  }
+
+  #logo-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .menu-links {
+    margin-right: 461px;
+
+    .menu-text {
+      margin-left: 24;
+      color: $main-grey;
+    }
+
+  }
+
+  #search-field {
+    width: 248px;
+    height: 25px;
+    background: #3C3B3D;
+    border-radius: 50px;
+
+    input {
+      color: #757575;;
+    }
+  }
+}
+
+
+  
+  

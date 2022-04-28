@@ -1,0 +1,65 @@
+@mixin display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin footer {
+
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin mobile-version {
+  @media (max-width: 414px) {
+    width: 100%;
+  }
+}
+
+@mixin desktop-version {
+  @media (min-width: 414px) {
+    width: 
+  }
+}
+
+
+.footer-column {
+  @include flex-column;
+}
+
+Roboto, 30px
+
+Roboto, 32px
+
+Roboto, 24px
+
+Roboto, 38px
+
+Roboto, 64pх
+
+Roboto, 14px
+
+Roboto, 13.3px
+
+Roboto, 16px
+
+Roboto, 18px
+
+Roboto, 11px
+
+Roboto, 12px
+
+Roboto, 12.8px
+
+отдельное - кнопка бордер
+
+обводка и радиус - 5px и 3px
+
+отдельно - обертка
+
+цвета текста - #fff и #F89202 #757575
+
+
+отступы - 25px, 50px, 100px, 120px, 170px, 24px

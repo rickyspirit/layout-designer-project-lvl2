@@ -148,6 +148,7 @@
     "supports-color": "^5.5.0",
     "supports-hyperlinks": "^2.2.0",
     "supports-preserve-symlinks-flag": "^1.0.0",
+    "surge": "^0.9.0",
     "svg-tags": "^1.0.0",
     "table": "^6.8.0",
     "to-regex-range": "^5.0.1",
