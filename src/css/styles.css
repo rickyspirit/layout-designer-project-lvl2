@@ -474,4 +474,175 @@ h3 {
   margin: 43px 0 0 0;
   text-align: center;
 }
+
+#page-news {
+  padding: 100px 120px 0 120px;
+}
+
+@media (max-width: 600px) {
+  #page-news {
+    padding: 100px 20px 0 20px;
+  }
+}
+
+#page-news h2 {
+  margin-bottom: 48px;
+}
+
+#page-news h3 {
+  margin: 0;
+
+  font: 30px/45px normal "Roboto Regular", sans-serif;
+
+  text-align: left;
+}
+
+#page-news #news-1 .news-foto {
+  margin-right: 50px;
+}
+
+@media (max-width: 1400px) {
+  #page-news #news-1 .news-foto {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+}
+
+#page-news #news-2 .news-body {
+  margin-right: 50px;
+}
+
+@media (max-width: 1400px) {
+  #page-news #news-2 .news-body {
+    margin-right: 0;
+    margin-top: 50px;
+  }
+}
+
+#page-news .btn {
+  width: 140px;
+  padding: 16px 30px;
+  margin-top: 48px;
+}
+
+.news-text {
+  font: 16px/24px "Roboto Regular", sans-serif;
+  color: #CACACA;
+}
+
+.news-item {
+  margin-bottom: 65px;
+}
+
+@media (max-width: 1400px) {
+  .news-item {
+  flex-direction: column;
+  width: 100%;
+  }
+}
+
+#news-2 {
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+
+@media (max-width: 1400px) {
+  #news-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1400px) {
+  #news-1 {
+    align-items: center;
+  }
+}
+
+@media (min-width: 1240px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.news-body {
+  max-width: 575px;
+}
+
+.news-author {
+  font: 12px/19px "Roboto Regular", sans-serif;
+  text-transform: uppercase;
+
+  color: #F89202;
+}
+
+.news-date {
+  font: 12px/19px "Roboto Regular", sans-serif;
+
+  color: #CACACA;
+}
+
+.news-footer img {
+  width: 19px;
+  height: 19px;
+}
+
+.news-footer * {
+  margin-right: 16px;
+  align-self: center;
+}
+
+.news-item img {
+  width: auto;
+  max-width: 100%;
+}
+
+#page-app {
+  padding: 35px 120px 0 120px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 600px) {
+  #page-app {
+    padding: 35px 20px 100px 20px;
+  }
+}
+
+#page-app .flex-container {
+  justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+  #page-app .flex-container {
+    flex-direction: column-reverse;
+  }
+}
+
+#page-app h2 {
+  margin-bottom: 48px;
+}
+
+#page-app img {
+  width: 333px;
+  height: 278px;
+  margin: 0 auto;
+}
+
+#page-app .btn {
+  width: 131px;
+  height: 53px;
+  padding: 16px 40px;
+
+  font-size: 12.8px;
+
+  background: #95390C;
+  border-style: none;
+  border-radius: 32px;
+}
+
+.app-text-part {
+  max-width: 600px;
+}
+
+
 /*# sourceMappingURL=styles.css.map */
