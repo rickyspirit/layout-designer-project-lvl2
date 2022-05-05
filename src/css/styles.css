@@ -644,5 +644,77 @@ h3 {
   max-width: 600px;
 }
 
+.bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+h4 {
+  margin: 0 0 15px 0;
+
+  font: 18px/27px "Roboto Bold", sans-serif;
+  color: #FFFFFF; 
+}
+
+footer .basic-style {
+  color: #E0E0E0;
+}
+
+footer {
+  padding: 3rem 0 2rem 0;
+}
+
+footer .footer-main {
+  justify-content: space-between;
+}
+
+.icons-row {
+  display: flex;
+}
+
+.icons-row img {
+  margin-right: 24px;
+}
+
+.footer-main {
+  padding: 0 120px 72px 120px;
+}
+
+.footer-bottom {
+  padding: 40px 120px 17px 120px;
+
+  border-top: 1px solid #CACACA;
+}
+
+.footer-bottom * {
+  margin-right: 16px;
+}
+
+.footer-column .basic-style {
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  footer .flex-container {
+    flex-direction: column;
+  }
+  
+  .footer-main {
+    padding: 14px 20px 42px 20px;
+  }
+
+  .footer-column {
+    margin: 0 0 30px 0;
+  }
+  
+  .footer-bottom {
+    padding: 40px 20px 0 20px;
+  }
+
+  .footer-bottom div {
+    margin: 0 0 16px 0;
+  }
+}
+
+
 
 /*# sourceMappingURL=styles.css.map */
