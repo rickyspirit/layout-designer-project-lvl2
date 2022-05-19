@@ -797,5 +797,93 @@ footer .footer-main {
   background-color: #95390C;
 }
 
+#page-popular-track {
+  padding: 100px 120px 0 120px;
+}
+
+@media (max-width: 800px) {
+  #page-popular-track {
+    padding: 100px 20px 0 20px;
+  }
+}
+
+#tracks {
+  display: flex;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  #tracks {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#page-popular-track .grid-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#page-popular-track h2 {
+  text-align: start;
+  margin-bottom: 23px;
+}
+
+.popular-track {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 49px 0 0;
+}
+
+@media (max-width: 800px) {
+  .popular-track {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 0 0;
+  }
+}
+
+.popular-track img {
+  width: 55px;
+  height: 55px;
+  margin-right: 15px;
+}
+
+.song-info {
+  display: flex;
+}
+
+.track-info {
+  align-self: center;
+}
+
+.song-name {
+  font: 12.8px/19.2px "Roboto Bold", sans-serif;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto 0 auto;
+}
+
+.group-name {
+  font: 12.8px/19.2px "Roboto Regular", sans-serif;
+  font-weight: 400;
+  color: #E0E0E0;
+  margin: 0 auto 0 auto;
+}
+
+.song-duration {
+  display: flex;
+  align-self: center;
+  font: 12.8px/19.2px "Roboto Regular", sans-serif;
+  font-weight: 400;
+  color: #E0E0E0;
+}
+
+#page-popular-track .popular-track {
+  display: flex;
+}
 
 /*# sourceMappingURL=styles.css.map */
