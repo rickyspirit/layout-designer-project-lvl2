@@ -886,4 +886,59 @@ footer .footer-main {
   display: flex;
 }
 
+#page-discography {
+  padding: 100px 120px 0 120px;
+}
+
+#page-discography .flex-container {
+  flex-wrap: wrap;
+}
+
+.discography-item {
+  margin: 25px 50px 0 0;
+}
+
+.discography-info {
+  margin: 18px auto 0 auto;
+}
+
+#page-discography h2 {
+  text-align: start;
+  margin-bottom: 23px;
+}
+
+.album-title {
+  margin: 0 auto 0 auto;
+
+  font: 18px/27px "Roboto Bold", sans-serif;
+  color: #FFFFFF;
+}
+
+.album-year {
+  margin: 0;
+
+  font: 16px/24px "Roboto Regular", sans-serif;
+  color: #E0E0E0;
+}
+
+@media (max-width: 800px) {
+  #page-discography {
+    padding: 100px 20px 0 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  #page-discography img {
+    width: 137px;
+    height: 137px;
+  }
+}
+
+@media (max-width: 800px) {
+  #page-discography .discography-info {
+    max-width: 137px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
