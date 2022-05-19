@@ -914,7 +914,7 @@ footer .footer-main {
   color: #FFFFFF;
 }
 
-.album-year {
+#page-discography .basic-style {
   margin: 0;
 
   font: 16px/24px "Roboto Regular", sans-serif;
@@ -941,4 +941,41 @@ footer .footer-main {
   }
 }
 
+#page-similar {
+  padding: 100px 120px 100px 120px;
+}
+
+#page-similar .flex-container {
+  flex-wrap: wrap;
+}
+
+#page-similar h2 {
+  text-align: start;
+  margin-bottom: 23px;
+}
+
+.similar-item {
+  margin: 25px 50px 0 0; 
+}
+
+.similar-info {
+  margin-top: 17px;
+
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  #page-similar {
+    padding: 100px 20px 100px 20px;
+  }
+
+  #page-similar img {
+    width: 137px;
+    height: 137px;
+  }
+
+  .similar-info {
+    max-width: 137px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
