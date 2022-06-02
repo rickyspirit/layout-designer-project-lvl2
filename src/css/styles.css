@@ -18,8 +18,20 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
 @media (min-width: 1240px) {
-  .main .container {
+  .main #page-description .container {
     display: flex;
     align-items: center;
     max-width: 1200px;
@@ -28,7 +40,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .main .container {
+  .main #page-description .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,7 +52,7 @@ body {
 }
 
 @media (min-width: 600px) {
-  .main .container {
+  .main #page-description .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,22 +73,32 @@ body {
   color: #FFFFFF;
 }
 
-#page-description input[type=text] {
+#page-description form input{
   display: flex;
-  padding: 16px 0;
+  padding: 17px 0 17px 20px;
+  min-width: 100%;
 
   font: 14px/16.41px "Roboto Bold", sans-serif;
   color: #FFFFFF;
 
+  box-sizing: border-box;
   background: none;
   border: none;
+  border-radius: 3px;
 }
 
 header {
+  display: flex;
+  justify-content: center;
+}
+
+header .grid-container {
   display: grid;
   grid-template-columns: auto minmax(0, 66px) auto minmax(24px, 451px) auto; 
   position: absolute;
   top: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 120px 0 120px;
 
   font-family: Roboto, sans-serif;
@@ -85,7 +107,7 @@ header {
 }
 
 @media (max-width: 960px) {
-  header {
+  header .grid-container {
     display: grid;
     grid-template-rows: max-content 17px max-content 17px max-content;
     flex-direction: column;
@@ -192,19 +214,20 @@ header nav ul li a {
 }
 
 header form input {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
+  width: 100%;
+  padding: 5px 0 5px 10px;
 
   color: #757575;
 
+  box-sizing: border-box;
   background: none;
   border: none;
+  border-radius: 50px;
 }
 
 #page-description {
   width: 100%;
-  height: max-content;
+  height: auto;
 }
 
 .background-img {
@@ -216,7 +239,8 @@ header form input {
 
 @media (max-width: 600px) {
   h1 {
-    margin: 0;
+    margin: 50px 0 0 0;
+    width: 100%;
 
     font: 30px/45px "Roboto-Bold", sans-serif;
     font-weight: 700;
@@ -226,6 +250,7 @@ header form input {
 
   h2 {
     margin: 0;
+    width: 100%;
 
     font: 18px/27px "Roboto-Bold", sans-serif;
     font-weight: 700;
@@ -260,7 +285,7 @@ header form input {
   #page-description .grid-container {
     display: grid;
     grid-template-areas: "form-1 form-2"
-                       "button button";
+                          "button button";
     column-gap: 24px;
     justify-content: center;
     width: 100%;
@@ -279,20 +304,19 @@ header form input {
 
 .form-1 {
   grid-area: form-1;
+  padding-left: 0;
 }
 
 .form-2 {
   grid-area: form-2;
+  padding-left: 0;
 }
 
 @media (min-width: 600px) {
   #page-description .grid-container form {
     justify-content: space-between;
-    min-width: 270px;
-    max-width: 273px;
+    width: 273px;
     min-height: 50px;
-    padding-left: 20px;
-    margin-top: 17px;
     margin-bottom: 1.5rem;
 
     border: 2px solid #CACACA;
@@ -316,8 +340,6 @@ header form input {
 
 @media (max-width: 600px) {
   #page-description .grid-container form {
-    padding-left: 20px;
-    margin-top: 17px;
     margin-bottom: 1.5rem;
 
     border: 2px solid #CACACA;
@@ -337,6 +359,11 @@ header form input {
     background-color: #34C176;
   }
 }
+
+#page-description p {
+  margin: 31px 0 17px 0;
+  width: 100%;
+}
   
 h3 {
   font: 24px/36px "Roboto Regular", sans-serif;
@@ -352,6 +379,8 @@ h3 {
 }
 
 .pricing-value {
+  margin-bottom: 40px;
+
   font: 64px/1em "Roboto Regular", sans-serif;
   text-align: center;
   white-space: nowrap;
@@ -369,7 +398,7 @@ h3 {
 
 @media (min-width: 1200px) {
   #page-pricing {
-    padding: 100px 120px 0 120px;
+    padding: 100px 0 0 0;
     max-width: 1200px;
   }
 }
@@ -382,6 +411,10 @@ h3 {
 
 #page-pricing .pricing-footer {
   margin: 64px 0;
+
+  font: 12.8px/19.2px "Roboto Regular", sans-serif;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 #page-pricing .flex-container {
@@ -401,6 +434,7 @@ h3 {
 #page-pricing #pricing-item-1 {
   height: 100%;
   margin-right: 46.8px;
+
   background-image: url("../images/subscribe_1.png");
   background-position: center;
   background-size: cover;
@@ -413,9 +447,9 @@ h3 {
 }
 
 #page-pricing #pricing-item-2 {
-  margin-right: 0;
   height: 100%;
   margin-right: 46.8px;
+
   background-image: url("../images/subscribe_2.png");
   background-position: center;
   background-size: cover;
@@ -444,7 +478,7 @@ h3 {
 
 @media (max-width: 800px) {
   #page-pricing .flex-container .pricing-item {
-    margin: 45px 0 0 0;
+    margin: 46px 0 0 0;
     padding: 0 1.5rem 0 1.5rem;
 
     border-radius: 1rem;
@@ -458,6 +492,7 @@ h3 {
 .btn {
   width: 100%;
   height: 66px;
+
   background: none;
   border: 1px solid #fff;
   border-radius: 5px;
@@ -476,7 +511,7 @@ h3 {
 }
 
 #page-news {
-  padding: 100px 120px 0 120px;
+  padding: 100px 0 0 0;
 }
 
 @media (max-width: 600px) {
@@ -495,6 +530,10 @@ h3 {
   font: 30px/45px normal "Roboto Regular", sans-serif;
 
   text-align: left;
+}
+
+#page-news #news-1 {
+  margin-bottom: 65px;
 }
 
 #page-news #news-1 .news-foto {
@@ -528,10 +567,7 @@ h3 {
 .news-text {
   font: 16px/24px "Roboto Regular", sans-serif;
   color: #CACACA;
-}
-
-.news-item {
-  margin-bottom: 65px;
+  margin: 30px 0 24px 0;
 }
 
 @media (max-width: 1400px) {
@@ -598,18 +634,31 @@ h3 {
 }
 
 #page-app {
-  padding: 35px 120px 0 120px;
+  padding: 100px 0 0 0;
   margin-bottom: 100px;
 }
 
+
+@media (max-width: 1240px) {
+  #page-app .app-text-part {
+    margin-left: 20px;
+    align-self: center;
+  }
+}
+
+
 @media (max-width: 600px) {
-  #page-app {
+  #page-app  {
     padding: 35px 20px 100px 20px;
   }
 }
 
 #page-app .flex-container {
   justify-content: space-between;
+}
+
+#page-app .container {
+  width: 100%;
 }
 
 @media (max-width: 900px) {
@@ -620,6 +669,10 @@ h3 {
 
 #page-app h2 {
   margin-bottom: 48px;
+}
+
+#page-app .flex-container {
+  justify-content: space-between;
 }
 
 #page-app img {
@@ -660,11 +713,18 @@ footer .basic-style {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
   padding: 3rem 0 2rem 0;
 }
 
 footer .footer-main {
-  justify-content: space-between;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-self: center;
+  padding: 0 0 72px 0;
 }
 
 .icons-row {
@@ -675,18 +735,35 @@ footer .footer-main {
   margin-right: 24px;
 }
 
-.footer-main {
-  padding: 0 120px 72px 120px;
+.footer-bottom {
+  display: flex;
+  align-self: center;
+  justify-content: flex-start;
+  max-width: 1200px;
+  width: 100%;
+  padding: 40px 20px 17px 20px; 
+
+  box-sizing: border-box;
 }
 
-.footer-bottom {
-  padding: 40px 120px 17px 120px;
+#line {
+  height: 1px;
 
   border-top: 1px solid #CACACA;
 }
 
+footer a {
+  color: #E0E0E0;
+  text-decoration: none;
+}
+
 .footer-bottom * {
   margin-right: 16px;
+}
+
+.footer-column {
+  width: 310px;
+  padding: 0 20px 0 20px;
 }
 
 .footer-column .basic-style {
@@ -694,12 +771,15 @@ footer .footer-main {
 }
 
 @media (max-width: 1000px) {
+
   footer .flex-container {
     flex-direction: column;
+    margin: 0;
+    box-sizing: border-box;
   }
   
   .footer-main {
-    padding: 14px 20px 42px 20px;
+    padding: 14px 0 42px 0;
   }
 
   .footer-column {
@@ -717,7 +797,8 @@ footer .footer-main {
 
 .artist {
   flex-direction: column;
-  min-height: 100vh;
+  max-height: 100vh;
+  padding-bottom: 224px;
   
 
   background-image: url('../images/Morten\ Harket.png');
@@ -780,6 +861,8 @@ footer .footer-main {
   margin-right: 24px;
   padding: 20px 30px;
 
+  color: #FFFFFF;
+  text-transform: uppercase;
   border-style: none;
 }
 
@@ -798,7 +881,7 @@ footer .footer-main {
 }
 
 #page-popular-track {
-  padding: 100px 120px 0 120px;
+  padding: 100px 0 0 0;
 }
 
 @media (max-width: 800px) {
@@ -827,8 +910,9 @@ footer .footer-main {
 }
 
 #page-popular-track h2 {
-  text-align: start;
   margin-bottom: 23px;
+
+  text-align: start;
 }
 
 .popular-track {
@@ -860,23 +944,26 @@ footer .footer-main {
 }
 
 .song-name {
+  margin: 0 auto 0 auto;
+
   font: 12.8px/19.2px "Roboto Bold", sans-serif;
   color: #FFFFFF;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0 auto 0 auto;
 }
 
 .group-name {
+  margin: 0 auto 0 auto;
+
   font: 12.8px/19.2px "Roboto Regular", sans-serif;
   font-weight: 400;
   color: #E0E0E0;
-  margin: 0 auto 0 auto;
 }
 
 .song-duration {
   display: flex;
   align-self: center;
+
   font: 12.8px/19.2px "Roboto Regular", sans-serif;
   font-weight: 400;
   color: #E0E0E0;
@@ -887,7 +974,7 @@ footer .footer-main {
 }
 
 #page-discography {
-  padding: 100px 120px 0 120px;
+  padding: 100px 0 0 0;
 }
 
 #page-discography .flex-container {
@@ -942,7 +1029,7 @@ footer .footer-main {
 }
 
 #page-similar {
-  padding: 100px 120px 100px 120px;
+  padding: 100px 0 100px 0;
 }
 
 #page-similar .flex-container {
@@ -950,8 +1037,9 @@ footer .footer-main {
 }
 
 #page-similar h2 {
-  text-align: start;
   margin-bottom: 23px;
+
+  text-align: start;
 }
 
 .similar-item {
@@ -962,6 +1050,12 @@ footer .footer-main {
   margin-top: 17px;
 
   text-align: center;
+}
+
+.similar-info p {
+  margin: 0;
+
+  color: #E0E0E0;
 }
 
 @media (max-width: 800px) {
