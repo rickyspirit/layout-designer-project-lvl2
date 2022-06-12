@@ -90,6 +90,8 @@ section {
 header {
   display: flex;
   justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header .grid-container {
@@ -97,7 +99,6 @@ header .grid-container {
   grid-template-columns: auto minmax(0, 66px) auto minmax(24px, 451px) auto; 
   position: absolute;
   top: 25px;
-  max-width: 1200px;
   margin: 0 auto;
 
   font-family: Roboto, sans-serif;
@@ -395,6 +396,7 @@ h3 {
 
 #page-pricing {
   padding: 100px 20px 0 20px;
+  max-width: 1200px;
 }
 
 @media (min-width: 1200px) {
@@ -511,6 +513,7 @@ h3 {
 
 #page-news {
   padding: 100px 0 0 0;
+  max-width: 1200px;
 }
 
 @media (max-width: 600px) {
@@ -652,6 +655,7 @@ h3 {
 #page-app {
   padding: 100px 0 0 0;
   margin-bottom: 100px;
+  max-width: 1200px;
 }
 
 
@@ -919,6 +923,7 @@ footer a {
 
 #page-popular-track {
   padding: 100px 0 0 0;
+  max-width: 1200px;
 }
 
 @media (max-width: 800px) {
@@ -1014,6 +1019,7 @@ h6 {
 
 #page-discography {
   padding: 100px 0 0 0;
+  max-width: 1200px;
 }
 
 #page-discography .flex-container {
@@ -1068,7 +1074,9 @@ h5 {
 }
 
 #page-similar {
-  padding: 100px 0 100px 0;
+  padding: 100px 0 0 0;
+  margin-bottom: 100px;
+  max-width: 1200px;
 }
 
 #page-similar .flex-container {
