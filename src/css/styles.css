@@ -45,8 +45,9 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%;
-    padding: 0 0 200px 0;
+    width: 100%;
+    padding: 0 0 0 0;
+    margin: 0;
 
     text-align: center;
   }
@@ -104,6 +105,7 @@ header .grid-container {
 
   font-family: Roboto, sans-serif;
   font-size: 11px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -121,9 +123,6 @@ header .grid-container {
     padding: 0 20px;
   }
 
-  header li {
-    margin-bottom: 3px;
-  }
 }
 
 header .logo {
@@ -145,6 +144,7 @@ header .logo .menu-text {
   margin: auto 0 auto 16px;
 
   color: #CACACA;
+  font-weight: 700;
 }
 header img {
   width: 24px;
@@ -235,17 +235,19 @@ header form input {
 }
 
 .main-page {
-  height: 750px;
+  height: 853px;
+  padding: 0 20px 0 20px;
 
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
+  box-sizing: border-box;
 }
 
 
 @media (max-width: 600px) {
   h1 {
-    margin: 275px 0 0 0;
+    margin: 0;
     width: 100%;
 
     font: 30px/45px "Roboto-Bold", sans-serif;
@@ -748,11 +750,13 @@ header form input {
 }
 
 #page-app .btn {
+  box-sizing: border-box;
   width: 131px;
   height: 53px;
   padding: 16px 40px;
 
   font-size: 12.8px;
+  text-transform: none;
 
   background: #95390C;
   border-style: none;
@@ -764,7 +768,11 @@ header form input {
   flex-direction: column;
   justify-content: flex-start;
   max-width: 600px;
-  margin: 0;
+  margin: 16px 0 0 0;
+}
+
+#page-app .basic-style {
+  margin: 0 0 16px 0;
 }
 
 .bg-gradient {
