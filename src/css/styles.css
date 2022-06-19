@@ -105,6 +105,7 @@ header .grid-container {
 
   font-family: Roboto, sans-serif;
   font-size: 11px;
+  line-height: 12.89px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -244,6 +245,17 @@ header form input {
   box-sizing: border-box;
 }
 
+@media (max-width: 600px) {
+  .main-page {
+    height: 853px;
+    padding: 0 20px 0 20px;
+  
+    background-image: url("../images/banner.png");
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+}
 
 @media (max-width: 600px) {
   h1 {
@@ -1165,7 +1177,10 @@ h3 {
 
 @media (max-width: 800px) {
   #page-similar {
+    height: 1170px;
     padding: 100px 20px 0 20px;
+
+    box-sizing: border-box;
   }
 
   #page-similar img {
