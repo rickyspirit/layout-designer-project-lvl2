@@ -341,7 +341,12 @@ header form input {
     min-height: 50px;
     margin-bottom: 1.5rem;
 
-    border: 2px solid #CACACA;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-color: #CACACA;
+    border-style: solid;
     border-radius: 3px;
   }
 
@@ -364,7 +369,12 @@ header form input {
   #page-description .grid-container form {
     margin-bottom: 1.5rem;
 
-    border: 2px solid #CACACA;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-color: #CACACA;
+    border-style: solid;
     border-radius: 3px;
   }
   
@@ -1117,6 +1127,7 @@ h3 {
   margin: 0 auto 0 auto;
 
   font: 18px/27px "Roboto Bold", sans-serif;
+  font-weight: 700;
   color: #FFFFFF;
 }
 
