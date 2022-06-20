@@ -31,6 +31,10 @@ section {
   width: 100%;
 }
 
+#page-description {
+  padding: 200px 20px;
+}
+
 @media (min-width: 1240px) {
   .main #page-description .container {
     display: flex;
@@ -46,7 +50,6 @@ section {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 100px 0 0 0;
     margin: 0;
 
     text-align: center;
@@ -59,7 +62,6 @@ section {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 200px 0;
 
     text-align: center;
   }
@@ -237,7 +239,7 @@ header form input {
 
 .main-page {
   height: 750px;
-  padding: 0 20px 0 20px;
+  padding: 200px 20px 200px 20px;
 
   background-image: url("../images/banner.png");
   background-position: center;
@@ -248,7 +250,7 @@ header form input {
 @media (max-width: 600px) {
   .main-page {
     height: 853px;
-    padding: 0 20px 0 20px;
+    padding: 200px 20px 200px 20px;
   
     background-image: url("../images/banner.png");
     background-position: center;
@@ -598,7 +600,7 @@ header form input {
     font: 30px/45px "Roboto Regular", sans-serif;
 
     text-align: left;
-    text-transform: none;
+    text-transform: capitalize;
   }
 }
 
@@ -821,8 +823,10 @@ h4 {
   margin: 0 0 15px 0;
 
   font: 18px/27px "Roboto Bold", sans-serif;
+  font-weight: 700;
   color: #FFFFFF;
   text-align: left;
+  text-transform: uppercase;
 }
 
 footer .basic-style {
@@ -921,7 +925,7 @@ footer a {
 
 .artist {
   flex-direction: column;
-  height: 713px;
+  height: 313px;
 
   background-image: url('../images/Morten\ Harket.png');
   background-position: center;
@@ -941,9 +945,10 @@ footer a {
 }
 
 .artist .container {
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   margin: 0;
-  padding: 250px 120px 0 120px;
 }
 
 @media (max-width: 800px) {
@@ -952,10 +957,6 @@ footer a {
     margin: 0;
     padding: 225px 20px 0 20px;
   }
-}
-
-.artist .flex-container {
-  margin-bottom: 223px;
 }
 
 @media (max-width: 600px) {
