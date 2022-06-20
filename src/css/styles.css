@@ -414,9 +414,10 @@ header form input {
 
 #page-news h3 {
   font: 24px/36px "Roboto Regular", sans-serif;
-  text-transform: uppercase;
+  font-weight: 400;
   color: #fff;
   text-align: center;
+  text-transform: capitalize;
 }
 
 @media (max-width: 600px) {
@@ -579,9 +580,10 @@ header form input {
     margin: 0;
 
     font: 16px/24px "Roboto Regular", sans-serif;
+    font-weight: 400;
   
     text-align: left;
-    text-transform: none;
+    text-transform: capitalize;
   }
 }
 
@@ -815,6 +817,14 @@ h4 {
   color: #FFFFFF; 
 }
 
+.footer-main h2 {
+  margin: 0 0 15px 0;
+
+  font: 18px/27px "Roboto Bold", sans-serif;
+  color: #FFFFFF;
+  text-align: left;
+}
+
 footer .basic-style {
   color: #E0E0E0;
 }
@@ -824,7 +834,6 @@ footer {
   flex-direction: column;
   margin: 0 auto;
   padding: 3rem 0 2rem 0;
-  height: 387px;
 }
 
 @media (min-width: 1000px) {
@@ -863,14 +872,13 @@ footer {
 }
 
 footer a {
-  display: block;
-  height: 100%;
-
   color: #E0E0E0;
   text-decoration: none;
 }
 
 .footer-bottom a {
+  display: block;
+  height: 100%;
   margin-right: 16px;
 }
 
@@ -985,6 +993,11 @@ footer a {
   height: 62px;
   margin-right: 24px;
   padding: 20px 30px;
+
+  font-size: 12.8px;
+  line-height: 19.2px;
+  font-weight: 400;
+  text-transform: uppercase;
 
   color: #FFFFFF;
   text-transform: uppercase;
@@ -1129,6 +1142,7 @@ h3 {
   font: 18px/27px "Roboto Bold", sans-serif;
   font-weight: 700;
   color: #FFFFFF;
+  text-transform: capitalize;
 }
 
 #page-discography .basic-style {
